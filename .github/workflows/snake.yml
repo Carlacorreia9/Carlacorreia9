@@ -1,0 +1,48 @@
+# 🐍 GitHub Snake Game Animation - QA Edition by Carla Correia 👩‍💻✨
+
+name: 🐍 GitHub Snake Game QA Style
+
+on:
+  # ⏰ Executa diariamente à meia-noite UTC
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # 📦 Executa em pushs para o branch main
+  push:
+    branches:
+      - main
+  
+  # 👇 Permite execução manual no GitHub
+  workflow_dispatch:
+
+jobs:
+  generate:
+    name: 🎨 Gerar Animação de Contribuições
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # ✅ Etapa 1: Checkout do repositório
+      - name: 📁 Checkout do Repositório
+        uses: actions/checkout@v3
+
+      # 🐍 Etapa 2: Gerar animações da cobrinha do GitHub
+      - name: 🐍 Gerar Animação Snake de Contribuições
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # 🚀 Etapa 3: Deploy para o branch `output`
+      - name: 🚀 Deploy da Animação para o Branch output
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "✨ Atualização da Snake por Carla Correia (@Carlacorreia9) - QA Style [skip ci]"
