@@ -33,13 +33,10 @@ Sou apaixonada por qualidade, segurança e boas práticas. Gosto de pensar nos p
 
 ## 📫 Onde me encontrar
 
-- 💼 [LinkedIn](www.linkedin.com/in/carla-souza-0295b2236)
+- 💼 [LinkedIn](https://www.linkedin.com/in/seu-usuario)
 - 💻 [Portfólio](https://seuportfolio.dev)
 - ✉️ Email: seuemail@exemplo.com
 
 ---
-
-
-
 
 ✨ _Sempre em busca da excelência na qualidade e segurança dos produtos que entrego._
