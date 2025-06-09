@@ -34,7 +34,6 @@ Sou uma Analista de Qualidade (QA) apaixonada por garantir que aplicações func
 ### 🔎 Testes Unitários
 
 - **Jest**: Ideal para React, Node.js e Next.js com mocks e cobertura de código.
-- **PHPUnit**: Testes robustos para Laravel, WordPress e Symfony.
 - **Pytest**: Flexível para testes unitários em Python com fixtures e relatórios.
 
 ### 🧠 Testes BDD (Behavior Driven Development)
@@ -93,21 +92,6 @@ Sou uma Analista de Qualidade (QA) apaixonada por garantir que aplicações func
   - Relatórios de cobertura
   - Evidências por tipo de teste e por projeto
 - Facilitando auditorias, validações e rastreabilidade.
-
----
-
-## ☁️ Infraestrutura QA (Simulada em Nuvem – AWS)
-
-### 🔧 Servidor 1 – Ferramentas & Armazenamento
-- Jenkins, SonarQube, Artillery, Postman, ZAP.
-- Armazenamento por projeto, por tipo de teste e por status (erro/sucesso).
-
-### 🧪 Servidor 2 – Testes de Banco de Dados
-- **MySQL e PostgreSQL**:
-  - Validação da estrutura, integridade e desempenho dos dados.
-
-### 🖥️ Servidor 3 – Execução de Projetos
-- Deploy controlado dos sistemas em teste para execução das suítes automatizadas.
 
 ---
 
